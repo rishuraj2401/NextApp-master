@@ -132,7 +132,7 @@ console.log(images);
               <div className={styles.imgsec}>
                 <div key={image.id} style={{ padding: '1vw', borderRadius: '5px' }}>
                   <Link href={`/profileHader?username=${image.user.username}`} >
-                   <a> <b>@{image.user.username} </b></a>
+                    <b>@{image.user.username} </b>
                   </Link>
                   {/* <Link href={`/profile?username=${image.user.username}`}>
         <a>Go to Profile</a>
@@ -143,9 +143,9 @@ console.log(images);
 
                   <UnsplashImage url={image.urls.thumb} style={{ height: '200px' }} />
                   <p style={{ display: 'inlineFlex', justifyContent: 'spaceBetween', position: 'relative' }}>
-                     <Link href={image.urls.raw}><a>Raw</a></Link> 
-                    <Link href={image.urls.full}><a>Full</a></Link>
-                    <Link href={image.urls.regular}><a>Regular</a></Link>
+                     <Link href={image.urls.raw}>Raw</Link> 
+                    <Link href={image.urls.full}>Full</Link>
+                    <Link href={image.urls.regular}>Regular</Link>
                   </p>
 
                    <div style={{ borderRadius: '2px' }}>
